@@ -1,4 +1,4 @@
-import Component from 'react'
+import {Component} from 'react'
 
 import './index.css'
 
@@ -15,10 +15,10 @@ class Counter extends Component {
     return (
       <div className="app-container">
         <h1 className="count">Count {count}</h1>
-        <button className="button" onClick={this.onDecrement} type="button">
+        <button className="button" onClick={this.onIncrement} type="button">
           Increase
         </button>
-        <button className="button" onClick={this.onIncrement} type="button">
+        <button className="button" onClick={this.onDecrement} type="button">
           Decrease
         </button>
       </div>
